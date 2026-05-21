@@ -15,10 +15,7 @@ const sommaAnonima = function(numero1,  numero2){
 };
 
 // 3. Arrow Function (Sintassi contratta)
-const arrowFunction = (numero1, numero2) => {
-    return numero1 + numero2 ;
-};
-
+const arrowFunction = (numero1, numero2) => numero1 + numero2;
 // TEST 
 
 console.log(somma(5,5));

@@ -114,3 +114,23 @@ function eseguiEferma(messaggio, timerAvvia, timerOut){
 
 console.log(eseguiEferma("sto parlando", 1000, 3000 ));
 
+/*Snack 8 (Bonus)
+Crea una funzione che simula un conto alla rovescia
+Scrivi una funzione contoAllaRovescia che accetta un numero n e stampa il conto alla rovescia da n a 0, con un intervallo di 1 secondo tra ogni numero.
+ Quando arriva a 0, stampa "Tempo scaduto!" e interrompe il timer.*/
+
+
+function contoAllaRovescia(n){
+
+    let count = n ;
+     const idCount = setInterval(function(){
+        if (count > 0 ){
+            console.log(count);
+            count -- ;
+        }
+        else (console.log("Tempo scaduto!"));
+        clearInterval(idCount);
+    
+    },1000);
+};
+contoAllaRovescia(5);

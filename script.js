@@ -99,3 +99,21 @@ function creaContatoreAutomatico (intervallo){
 const avviaContatore = (creaContatoreAutomatico(3000));
 
 avviaContatore(); //per avviare il contatoree 
+
+/*🏆 Snack 7
+Crea una funzione che ferma un timer dopo un certo tempo
+Scrivi una funzione eseguiEferma che accetta un messaggio, un tempo di avvio e un tempo di stop. 
+Il messaggio deve essere stampato a intervalli regolari, ma si deve fermare dopo il tempo di stop.*/
+
+function eseguiEferma(messaggio, timerAvvia, timerOut){
+
+    const idTimerAvvia = setInterval(function(){console.log(messaggio)},timerAvvia);
+
+    const idTimerOut = setTimeout(function(){clearInterval(idTimerAvvia); //clearInterval per interrompere il setinterval e lo interompe 
+        console.log("timer finito basta parlare  ");
+    },timerOut);
+      
+};
+
+console.log(eseguiEferma("sto parlando", 1000, 3000 ));
+
